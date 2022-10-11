@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'PT Serif', serif;
+    background-color: #f5f2ef;
+    font-size: 20px;
+
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+.logo {
+    font-size: 30px;
+}
+p {
+    line-height: 1.5;
+    margin: 0 auto 30px;
+}
+header {
+    grid-column: 4 / 10;
+}
+header hgroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+hgroup a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+main {
+    height: 100vh;
+    background-color: #fff;
+    grid-column: 4 / 10;
+}
+main hgroup {
+    margin: 50px 50px 50px;
+}
+aside {
+    grid-row: 2 / 3;
+    grid-column: 10 / 13;
+}
+footer {
+    grid-column: 1 / 13;
+    display: flex;
+    height: 100px;
+    background-color: black;
+}
+
+footer * {
+    color: #f7f7f7;
+}
