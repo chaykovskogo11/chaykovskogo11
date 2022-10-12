@@ -7,13 +7,13 @@
 
 body {
     margin: 0;
-    font-family: 'PT Serif', serif;
     background-color: #f7f7f7;
+    font-family: 'PT Serif', serif;
     font-size: 20px;
 
     display: grid;
-    grid-column-gap: 20px;
     grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 20px;
 }
 
 h1, h2, h3,
@@ -22,12 +22,16 @@ h4, h5, h6 {
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 main p {
     line-height: 1.5;
     margin: 0 auto 30px;
+}
+
+img {
+    width: 100%;
 }
 
 header {
@@ -37,66 +41,100 @@ header {
     align-items: baseline;
 }
 
-.fancy-a:hover {
-    text-decoration: underline black;
+a:visited {
+    color: inherit;
 }
 
-.fancy-a {
-    text-decoration: none;
+a:hover {
+    /*text-decoration: underline black;*/
+    color: rgb(52, 109, 219);
+}
+
+a:active {
     color: black;
 }
 
+a {
+    text-decoration: none;
+}
+
 main {
-    border-radius: 25px;
-    background-color: #fff;
     grid-column: 4 / 10;
+    min-height: 100vh;
+    border-radius: 25px 25px 0 0;
+    background-color: #fff;
+}
+article {
     padding: 50px;
 }
-
-main hgroup {
-    margin: 50px 50px 50px;
+article > h1 {
+    font-size: 40px;
+}
+.banner {
+    object-fit: cover;
+    max-height: 360px;
+    border-radius: inherit;
+}
+main a {
+    text-decoration: underline black;
 }
 
-nav > ul {
+nav ul {
     list-style-type: none;
-    padding: 10px;
-    border-left: solid 2px darkgray;
-}
-
-nav ul ul {
-    list-style-type: none;
-    padding-left: 20px;
+    padding: 0;
+    margin: 10px 0;
+    color: #6c757d;
+    /*border-left: solid 2px darkgray;*/
 }
 
 nav h1 {
+    margin: 0;
     font-size: 20px;
     font-weight: normal;
 }
 
 .list-of-contents {
+    align-self: start;
     position: sticky;
+    top: 30px;
     grid-row: 2 / 3;
     grid-column: 10 / 13;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.list-of-contents ul {
+    color: #6c757d;
+}
+
+.list-of-contents li {
+    margin-bottom: 3px;
 }
 
 .list-of-articles {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
+    justify-self: end;
+    margin-right: 20px;
     font-size: 16px;
 }
 
 footer {
+    display: grid;
     grid-column: 1 / 13;
-    display: flex;
-    align-items: center;
-    height: 100px;
+    grid-template-columns: repeat(12, 1fr);
     background-color: black;
+}
+
+footer section {
+    display: flex;
+    grid-column: 4 / 10;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
 }
 
 footer * {
     color: #f7f7f7;
-}
-
-.itmo-logo {
-    scale: 10%;
 }
