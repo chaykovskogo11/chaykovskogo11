@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 
 * {
@@ -8,7 +8,7 @@
 body {
     margin: 0;
     font-family: 'PT Serif', serif;
-    background-color: #f5f2ef;
+    background-color: #f7f7f7;
     font-size: 20px;
 
     display: grid;
@@ -20,45 +20,83 @@ h1, h2, h3,
 h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
 }
+
 .logo {
     font-size: 30px;
 }
-p {
+
+main p {
     line-height: 1.5;
     margin: 0 auto 30px;
 }
+
 header {
     grid-column: 4 / 10;
-}
-header hgroup {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
-hgroup a {
+
+.fancy-a:hover {
+    text-decoration: underline black;
+}
+
+.fancy-a {
     text-decoration: none;
     color: black;
-    font-family: 'Raleway', sans-serif;
 }
+
 main {
-    height: 100vh;
+    border-radius: 25px;
     background-color: #fff;
     grid-column: 4 / 10;
+    padding: 50px;
 }
+
 main hgroup {
     margin: 50px 50px 50px;
 }
-aside {
+
+nav > ul {
+    list-style-type: none;
+    padding: 10px;
+    border-left: solid 2px darkgray;
+}
+
+nav ul ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+nav h1 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.list-of-contents {
+    position: sticky;
     grid-row: 2 / 3;
     grid-column: 10 / 13;
 }
+
+.list-of-articles {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    font-size: 16px;
+}
+
 footer {
     grid-column: 1 / 13;
     display: flex;
+    align-items: center;
     height: 100px;
     background-color: black;
 }
 
 footer * {
     color: #f7f7f7;
+}
+
+.itmo-logo {
+    scale: 10%;
 }

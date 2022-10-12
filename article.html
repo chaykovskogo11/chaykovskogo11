@@ -6,33 +6,74 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header> <!--The header element represents a group of introductory or navigational aids-->
-    <div> <!--The hgroup element represents a heading and related content.-->
-        <h1 class="logo">Дом Строгонова</h1>
-        <a href="index.html">Главная</a>
-    </div>
+<header>
+    <h1 class="logo">Дом Строгонова</h1>
+    <a class="fancy-a" href="index.html">Главная</a>
 </header>
-<aside class="">
+<nav class="list-of-articles">
+    <h1>Другие статьи:</h1>
+    <ul>
+        <li>Дом на Чайке
+            <ul>
+                <li>Коллекция</li>
+                <li>Архитекторы</li>
+            </ul>
+        </li>
+        <li>П.С. Строганов
+            <ul>
+                <li>Биография</li>
+                <li>Коллекция</li>
+            </ul>
+        </li>
+        <li>Род Строгановых
+            <ul>
+                <li>биографии</li>
+                <li>иконопись</li>
+                <li>земли Строгановых</li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<nav class="list-of-contents">
     <h1>В этой статье:</h1>
     <ul>
-        <li>Глава 1</li>
-        <li>Глава 2</li>
+        <li><a class="fancy-a" href="#chapter-1">Глава 1</a></li>
+        <li><a class="fancy-a" href="#chapter-2">Глава 2</a></li>
         <li>Глава 3</li>
-        <li>....</li>
+        <li>...</li>
     </ul>
-</aside>
+</nav>
 <main>
     <h1>Заголовок статьи</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis
-        mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu
-        eleifend ipsum. Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus consequat
-        ultricies. Donec feugiat tempor turpis, rutrum sagittis mi venenatis at. Sed molestie lorem a blandit congue.
-        Ut pellentesque odio quis leo volutpat, vitae vulputate felis condimentum. Praesent vulputate fermentum lorem,
-        id rhoncus sem vehicula eu. Quisque ullamcorper, orci adipiscing auctor viverra, velit arcu malesuada metus, in
-        volutpat tellus sem at justo.</p>
+    <article>
+        <section id="chapter-1">
+            <h1>Глава 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam
+                quis
+                mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu
+                eleifend ipsum. Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus
+                consequat
+                ultricies.</p>
+            <img src="photo_2022-10-04_21-31-27.jpg">
+        </section>
+        <section id="chapter-2">
+            <h1>Глава 2</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam
+                quis
+                mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu
+                eleifend ipsum. Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus
+                consequat
+                ultricies. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu
+                eleifend ipsum. Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus
+                consequat
+                ultricies.</p>
+        </section>
+    </article>
 </main>
 <footer>
+    <p>Санкт-Петербург, 2022</p>
     <a href="https://github.com/chaykovskogo11/chaykovskogo11" target="_blank">Проект на github</a>
+    <img class="itmo-logo" src="itmo.png">
 </footer>
 </body>
 </html>
