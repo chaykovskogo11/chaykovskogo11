@@ -2,79 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Статья</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <h1 class="logo"><a href="index.html">Дом Строгонова</a></h1>
-</header>
-<nav class="list-of-articles">
-    <h1>Другие статьи:</h1>
-    <ul>
-        <li>Дом на Чайке
+    <header>
+        <h1 class="logo"><a href="index.html">Дом Строгонова</a></h1>
+        <img src="img/icons8-menu.svg" class="nav-button" alt="Навигация">
+    </header>
+    <nav class="list-of-articles" style="display: none">
+            <h1>Другие статьи:</h1>
             <ul>
-                <li>Коллекция</li>
-                <li>Архитекторы</li>
+                <li>Дом на Чайке
+                    <ul>
+                        <li>Коллекция</li>
+                        <li>Архитекторы</li>
+                    </ul>
+                </li>
+                <li>П.С. Строганов
+                    <ul>
+                        <li>Биография</li>
+                        <li>Коллекция</li>
+                    </ul>
+                </li>
+                <li>Род Строгановых
+                    <ul>
+                        <li>биографии</li>
+                        <li>иконопись</li>
+                        <li>земли Строгановых</li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-        <li>П.С. Строганов
-            <ul>
-                <li>Биография</li>
-                <li>Коллекция</li>
-            </ul>
-        </li>
-        <li>Род Строгановых
-            <ul>
-                <li>биографии</li>
-                <li>иконопись</li>
-                <li>земли Строгановых</li>
-            </ul>
-        </li>
-    </ul>
-</nav>
-<nav class="list-of-contents">
-    <h1>В этой статье:</h1>
-    <ul>
-        <li><a href="#chapter-1">Глава 1</a></li>
-        <li><a href="#chapter-2">Глава 2</a></li>
-        <li>Глава 3</li>
-        <li>...</li>
-    </ul>
-</nav>
-<main>
-    <img class="banner" src="img/photo_2022-10-12_23-13-34.jpg" alt="">
-    <article>
-        <h1>Заголовок статьи</h1>
-        <section id="chapter-1">
-            <h1>Глава 1</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam
-                quis
-                mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu
-                eleifend ipsum. Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus
-                consequat
-                ultricies.</p>
-            <img src="img/photo_2022-10-04_21-31-27.jpg" alt="">
+    </nav>
+    <nav class="list-of-contents" style="display: none">
+        <h1>В этой статье:</h1>
+        <ul>
+            <li><a href="#chapter-1">Городецкая глухая резьба</a></li>
+            <li><a href="#chapter-2">Хохломская роспись</a></li>
+            <li>Глава 3</li>
+            <li>...</li>
+        </ul>
+    </nav>
+    <main>
+        <img class="banner" src="img/img.jpg" alt="">
+        <article>
+            <h1>Складные ложки, пряники-птицы, дома с русалками: истории нижегородских промыслов</h1>
+            <p class="article-lead">Что такое <a href="index.html">«межеумок»?</a> И бывают ли двадцатикилограммовые пряники? Рассказываем истории хохломской росписи,
+                городецкой резьбы, пурехских колокольчиков и других знаменитых промыслов Нижегородской области</p>
+            <section id="chapter-1">
+                <h1>Городецкая глухая резьба</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam
+                    quis
+                    mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu
+                    eleifend ipsum. Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus
+                    consequat
+                    ultricies.</p>
+                <img src="img/photo_2022-10-04_21-31-27.jpg" alt="">
+            </section>
+            <section id="chapter-2">
+                <h1>Хохломская роспись</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam
+                    quis
+                    mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu
+                    eleifend ipsum. Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus
+                    consequat
+                    ultricies. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu
+                    eleifend ipsum. Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus
+                    consequat
+                    ultricies.</p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <section>
+            <p>Санкт-Петербург, 2022</p>
+            <a href="https://github.com/chaykovskogo11/chaykovskogo11" target="_blank">Проект на github</a>
         </section>
-        <section id="chapter-2">
-            <h1>Глава 2</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam
-                quis
-                mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu
-                eleifend ipsum. Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus
-                consequat
-                ultricies. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu
-                eleifend ipsum. Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus
-                consequat
-                ultricies.</p>
-        </section>
-    </article>
-</main>
-<footer>
-    <section>
-        <p>Санкт-Петербург, 2022</p>
-        <a href="https://github.com/chaykovskogo11/chaykovskogo11" target="_blank">Проект на github</a>
-    </section>
-</footer>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
