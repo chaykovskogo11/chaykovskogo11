@@ -95,7 +95,7 @@ main {
 .homepage-hero {
     min-height: 20em;
     background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .7)),
-    url("img/img.jpg") center/cover;
+    url("img/Особняк П.С.Строганова угловой вид .jpg") center/cover;
     color: white;
     padding: 1em;
 }
@@ -152,12 +152,40 @@ article section h1 {
 
 #collection-card {
     background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .7)),
-    url("img/photo_2022-10-04_21-31-27.jpg") center/cover;
+    url("img/библиотека.jpg") center/cover;
 }
 
 #architector-card {
     background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .7)),
+    url("img/Месмахер.jpg") center/cover;
+}
+#ps-card {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .7)),
+    url("img/Брюллов, Карл Павлович (1799-1852). Портрет гр. Павла Сергеевича Строганова. 1850.jpg") center/cover;
+}
+#collection2-card {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .7)),
     url("img/photo_2022-10-12_23-13-34.jpg") center/cover;
+}
+#collection2-card {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .7)),
+    url("img/photo_2022-10-12_23-13-34.jpg") center/cover;
+}
+#bib-fam-card {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .7)),
+    url("img/photo_2022-03-15_00-17-31.jpg") center/cover;
+}
+#bar-card {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .7)),
+    url("img/photo_2022-03-15_00-11-34.jpg") center/cover;
+}
+#sew-card {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .7)),
+    url("img/img.jpg") center/cover;
+}
+#land-card {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .7)),
+    url("img/photo_2022-03-15_00-07-30.jpg") center/cover;
 }
 
 /* Footer styles */
